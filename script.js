@@ -4,7 +4,7 @@ console.log("Main app logic loaded");
 window.addEventListener('load', () => {
     // Only trigger this if not already inside a popup or PWA
     if (window.innerWidth > 600 && !window.matchMedia('(display-mode: standalone)').matches) {
-      window.open(window.location.href, 'pwaPopup', 'width=500,height=500');
+      window.open(window.location.href, 'pwaPopup', 'width=800,height=500');
       window.close(); // optional: close the original tab
     }
   });
